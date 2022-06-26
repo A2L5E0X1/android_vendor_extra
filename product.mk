@@ -26,7 +26,7 @@ PRIV_VENDOR_PATH := vendor/extra
 # OTA
 #
 
-ifneq ($(filter sample,$(TARGET_DEVICE)),)
+ifneq ($(filter m12 sample,$(TARGET_DEVICE)),)
     $(warning Device has OTA support!)
     DEVICE_PACKAGE_OVERLAYS += $(PRIV_VENDOR_PATH)/ota
 endif
